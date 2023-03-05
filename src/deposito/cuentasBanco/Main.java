@@ -45,18 +45,18 @@ public class Main {
 private static void operativaCuenta(float cantidad) {
 	CuentaBanco cuentaPersonal;
 	double saldoActual;
-	cuentaPersonal = new CuentaBanco("Antonio López","1000-2365-85-1230456789",5000,0);
+	cuentaPersonal = new CuentaBanco("Antonio López","1000-2365-85-1230456789",10000,0);
 	saldoActual = cuentaPersonal.estado();
 	System.out.println("El saldo actual es "+ saldoActual );
 	
 	try {
-	    cuentaPersonal.retirar(4000);
+	    cuentaPersonal.retirar(8000);
 	} catch (Exception e) {
 	    System.out.print("Fallo al retirar");
 	}
 	try {
 	    System.out.println("Ingreso en cuenta");
-	    cuentaPersonal.ingresar(2000);
+	    cuentaPersonal.ingresar(4000);
 	} catch (Exception e) {
 	    System.out.print("Fallo al ingresar");
 	}
