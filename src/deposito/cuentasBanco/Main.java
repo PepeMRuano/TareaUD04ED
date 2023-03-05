@@ -50,13 +50,13 @@ private static void operativaCuenta(float cantidad) {
 	System.out.println("El saldo actual es "+ saldoActual );
 	
 	try {
-	    cuentaPersonal.retirar(8000);
+	    cuentaPersonal.retirar(4000);
 	} catch (Exception e) {
 	    System.out.print("Fallo al retirar");
 	}
 	try {
 	    System.out.println("Ingreso en cuenta");
-	    cuentaPersonal.ingresar(4000);
+	    cuentaPersonal.ingresar(2000);
 	} catch (Exception e) {
 	    System.out.print("Fallo al ingresar");
 	}
